@@ -5,12 +5,40 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
   tools:context=".QuoteFragment">
 
+  <android.support.v7.widget.CardView
+    android:id="@+id/cardContainer"
+    android:layout_width="350dp"
+    android:layout_height="210dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    app:cardElevation="12dp"
+    app:cardBackgroundColor="@color/md_grey_400">
+
+    <TextView
+      android:id="@+id/quoteText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/nunito_sans"
+      android:textSize="22sp"
+      android:textAlignment="center"
+      android:layout_gravity="center"
+      android:text="@string/app_name"
+      android:textColor="@color/md_white_1000" />
+
+  </android.support.v7.widget.CardView>
+
   <TextView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:text="@string/hello_blank_fragment"
-    />
+    android:id="@+id/authorName"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/cardContainer"
+    android:layout_centerHorizontal="true"
+    android:fontFamily="@font/oswald"
+    android:textSize="45sp"
+    android:text="Author name" />
 
 </RelativeLayout>
