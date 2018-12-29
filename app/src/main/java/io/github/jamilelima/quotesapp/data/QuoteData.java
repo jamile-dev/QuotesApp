@@ -36,6 +36,7 @@ public class QuoteData {
               }
             }
             if (callBack != null) callBack.processFinished(quoteArrayList);
+
           }
         }, new Response.ErrorListener() {
             @Override

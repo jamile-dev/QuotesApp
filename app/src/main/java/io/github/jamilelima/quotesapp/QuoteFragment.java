@@ -1,5 +1,7 @@
 package io.github.jamilelima.quotesapp;
 
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
@@ -28,8 +30,8 @@ public class QuoteFragment extends Fragment {
       quoteText.setText(quote);
       quoteAuthorName.setText(" - " + author);
     } else {
-      quoteText.setText("");
-      quoteAuthorName.setText("");
+      cardView.setVisibility(View.GONE);
+      quoteAuthorName.setText(R.string.error_message);
     }
 
     return quoteView;
@@ -43,5 +45,4 @@ public class QuoteFragment extends Fragment {
     fragment.setArguments(bundle);
     return fragment;
   }
-
 }
