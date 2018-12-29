@@ -15,9 +15,9 @@ import org.json.JSONObject;
 
 public class QuoteData {
 
-  ArrayList<Quote> quoteArrayList = new ArrayList<>();
+  private ArrayList<Quote> quoteArrayList = new ArrayList<>();
 
-  public void getQuotes() {
+  public void getQuotes(final QuoteListAsyncResponse callBack) {
     String url = "https://bit.ly/2Slp2JU";
 
     JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Method.GET, url,
@@ -35,7 +35,7 @@ public class QuoteData {
                 e.printStackTrace();
               }
             }
-
+            if (callBack != null) callBack.processFinished(quoteArrayList);
           }
         }, new Response.ErrorListener() {
             @Override
