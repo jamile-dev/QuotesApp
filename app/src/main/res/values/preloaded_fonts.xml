@@ -4,5 +4,7 @@
          translatable="false">
     <item>@font/nunito_sans</item>
     <item>@font/oswald</item>
+    <item>@font/titillium_web_extralight</item>
+    <item>@font/titillium_web_semibold</item>
   </array>
 </resources>

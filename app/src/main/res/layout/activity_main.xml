@@ -16,6 +16,23 @@
     android:id="@+id/lilyLogoImage"
     android:src="@drawable/lilly" />
 
+  <TextView
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="352dp"
+    android:layout_alignBottom="@+id/viewPager"
+    android:layout_below="@+id/lilyLogoImage"
+    android:layout_centerHorizontal="true"
+    android:fontFamily="@font/titillium_web_semibold"
+    android:text="QUOTES APP"
+    android:textAlignment="center"
+    android:textColor="@color/md_grey_600"
+    android:textSize="30sp"
+    android:typeface="sans"
+    />
+
   <android.support.v4.view.ViewPager
     android:id="@+id/viewPager"
     android:layout_width="match_parent"
